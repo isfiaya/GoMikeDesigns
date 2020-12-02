@@ -777,15 +777,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-	background-color: #f3976c;
+	background-color: #94360a;
 }
 
 .tc-white {
-	color: #364577 !important;
+	color: #e3e3e3 !important;
 }
 
 .btn-atomic-tangerine {
-	background: #f3976c;
+	background: #94360a;
 	color: #ffffff !important;
 }
 
@@ -816,11 +816,11 @@ h4 {
 }
 
 .bg-dots-bg {
-	background-image: url("img/dots-bg.png");
+	background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-	background-image: url("img/lines-h2-bg.png");
+	background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-atlanta-20made-20sign {
@@ -1044,5 +1044,12 @@ h4 {
 @media (max-width: 767px) {
 	.bloc-mob-center-text {
 		text-align: center;
+	}
+	.social {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
 	}
 }
