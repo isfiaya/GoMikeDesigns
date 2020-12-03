@@ -12,21 +12,6 @@ button {
 	transition: all .3s ease-in-out;
 	outline: none !important;
 }
-
-a:hover {
-	text-decoration: none;
-	cursor: pointer;
-}
-
-#page-loading-blocs-notifaction {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	z-index: 100000;
-	background: #ffffff url("img/pageload-spinner.gif") no-repeat center center;
-}
-
 .bloc {
 	width: 100%;
 	clear: both;
@@ -804,7 +789,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-	color: #f3976c !important;
+	color: #595959 !important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -1057,4 +1042,7 @@ h4 {
 }
 .quote-color {
 	color: #333333 !important;
+}
+.center-img {
+	margin: auto;
 }
