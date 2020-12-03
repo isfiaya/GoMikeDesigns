@@ -53,7 +53,7 @@ a:hover {
 }
 
 .bloc-sm {
-	padding: 20px 50px;
+	padding: 20px 0px;
 }
 
 .bg-center,
@@ -782,6 +782,7 @@ h4 {
 
 .tc-white {
 	color: #e3e3e3 !important;
+	line-height: 1.4em;
 }
 
 .btn-atomic-tangerine {
@@ -1047,9 +1048,13 @@ h4 {
 	}
 	.social {
 		display: flex;
-		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		gap: 40px;
 	}
+}
+.link-color {
+	color: #e6e6e6 !important;
+}
+.quote-color {
+	color: #333333 !important;
 }
