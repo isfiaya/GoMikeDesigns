@@ -641,7 +641,20 @@ h4 {
 }
 .quote-color {
 	color: #333 !important;
+	font-size: 15px;
 }
 .center-img {
 	margin: auto;
+}
+.txt_edit {
+	font-size: 36px;
+	font-weight: 500;
+}
+.txt_size {
+	font-size: 22px;
+	font-weight: 500;
+	color: #575757 !important;
+}
+.p-size {
+	font-size: 16px !important;
 }

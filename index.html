@@ -22,7 +22,11 @@
 
 
   <!-- Analytics -->
-
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+  </script>
   <!-- Analytics END -->
 
 </head>
@@ -151,7 +155,7 @@
       <div class="container bloc-lg">
         <div class="row tight-width-whitespace black-background">
           <div class="col-sm-12">
-            <P class="mg-md text-center tc-white">
+            <P class="mg-md text-center tc-white p-size">
               I love Atlanta, my hometown, and want to see all Atlanta businesses succeed. I help by offering web design
               services that help local businesses stand out and attract new customers online.<br>
             </P>
@@ -173,7 +177,8 @@
       <div class="container bloc-lg">
         <div class="row">
           <div class="col-sm-12 text-center">
-            <h3>Websites I've designed and developed for Atlanta companies that resulted in more local business </h3>
+            <h3 class="txt_size">Websites I've designed and developed for Atlanta companies that resulted in more local
+              business </h3>
 
           </div>
         </div>
@@ -237,7 +242,7 @@
     <div class="bloc bgc-dark-slate-blue bg-atlanta-20made-20sign d-bloc  " id="bloc-5-cta">
       <div class="container bloc-lg">
         <div class="row">
-          <h3 class="mg-md text-center tc-white">
+          <h3 class="mg-md text-center tc-white txt_edit">
             Ready for a great website? <br>Let's design!
           </h3>
           <div class="col-sm-12 text-center">
@@ -304,6 +309,7 @@
   <script defer src="./js/blocs.js"></script>
   <script defer src="./js/jquery.touchSwipe.js"></script>
   <script defer src="./js/gmaps.js"></script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </body>
 
