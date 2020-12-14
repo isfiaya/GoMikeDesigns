@@ -161,9 +161,7 @@ button {
 	padding-right: 0;
 	padding-left: 0;
 }
-#bloc-2-services p {
-	font-size: 11px;
-}
+
 .navbar {
 	margin-bottom: 0;
 	z-index: 1;
@@ -312,6 +310,7 @@ a[data-lightbox]:hover::before {
 	font-size: 32px;
 	width: 50px;
 	height: 50px;
+	line-height: 50px;
 	margin-left: -25px;
 	border-radius: 50%;
 	background: rgba(0, 0, 0, .6);
@@ -337,10 +336,12 @@ a[data-lightbox]:hover img {
 	right: 15px;
 	bottom: 5px;
 }
+
 .snapshot-lb .lightbox-caption {
 	padding: 0;
 	color: rgba(0, 0, 0, .5);
 	background: 0 0;
+	text-align: center;
 }
 .btn,
 a,
@@ -639,8 +640,13 @@ h4 {
 .link-color {
 	color: #e6e6e6 !important;
 }
-.quote-color {
+.quote {
 	color: #333 !important;
+	font-size: 15px;
+	font-style: italic;
+	line-height: 26px;
+}
+.size-txt {
 	font-size: 15px;
 }
 .center-img {
@@ -657,4 +663,53 @@ h4 {
 }
 .p-size {
 	font-size: 16px !important;
+}
+.next-lightbox {
+	padding: 3px 5px 3px 7px;
+	right: 25px;
+}
+.prev-lightbox {
+	padding: 3px 5px 3px 7px;
+	left: 25px;
+}
+.next-lightbox,
+.prev-lightbox {
+	font-size: 20px;
+	color: rgba(255, 255, 255, .9);
+	background: rgba(0, 0, 0, .5);
+	transition: all .2s ease-in-out;
+	position: absolute;
+	top: 45%;
+	z-index: 1;
+	opacity: 0.4;
+}
+.close-lightbox {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 20;
+	background: rgba(0, 0, 0, .5);
+	border: none;
+	line-height: 30px;
+	opacity: 0.3;
+}
+#lightbox-modal .modal-dialog img {
+	max-height: 90vh;
+	margin: 0 auto;
+}
+.close-lightbox:hover,
+.next-lightbox:hover,
+.prev-lightbox:hover {
+	opacity: 1.0;
+	color: #fff;
+}
+.snapshot-lb .modal-body {
+	padding-bottom: 45px;
+}
+#lightbox-modal .modal-dialog {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto 0;
 }

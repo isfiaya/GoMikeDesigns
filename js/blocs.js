@@ -1,47 +1,48 @@
 // Blocs.js Minified
-// function setUpSpecialNavs() {
-//     $(".navbar-toggle").click(function(t) {
-//         var e = $(this).closest("nav"),
-//             i = e.find("ul.site-navigation"),
-//             a = i.clone();
-//         if (i.parent().hasClass("nav-special"))
-//             if (t.stopPropagation(), $(this).hasClass("selected-nav")) $(".blocsapp-special-menu blocsnav").removeClass("open"), $(".selected-nav").removeClass("selected-nav"), setTimeout(function() {
-//                 $(".blocsapp-special-menu").remove(), $("body").removeClass("lock-scroll"), $(".selected-nav").removeClass("selected-nav")
-//             }, 300);
-//             else {
-//                 $(this).addClass("selected-nav");
-//                 var o = e.attr("class").replace("navbar", "").replace("row", ""),
-//                     l = i.parent().attr("class").replace("navbar-collapse", "").replace("collapse", "");
-//                 ($(".content-tint").length = -1) && $("body").append('<div class="content-tint"></div>'), a.insertBefore(".page-container").wrap('<div class="blocsapp-special-menu ' + o + '"><blocsnav class="' + l + '">'), $("blocsnav").prepend('<a class="close-special-menu animated fadeIn" style="animation-delay:0.5s;"><div class="close-icon"></div></a>'),
-//                     function() {
-//                         var t = "fadeInRight",
-//                             e = 0,
-//                             i = 60;
-//                         $(".blocsapp-special-menu blocsnav").hasClass("fullscreen-nav") ? (t = "fadeIn", i = 100) : $(".blocsapp-special-menu").hasClass("nav-invert") && (t = "fadeInLeft");
-//                         $(".blocsapp-special-menu blocsnav li").each(function() {
-//                             $(this).parent().hasClass("dropdown-menu") ? $(this).addClass("animated fadeIn") : (e += i, $(this).attr("style", "animation-delay:" + e + "ms").addClass("animated " + t))
-//                         })
-//                     }(), setTimeout(function() {
-//                         $(".blocsapp-special-menu blocsnav").addClass("open"), $(".content-tint").addClass("on"), $("body").addClass("lock-scroll")
-//                     }, 10)
-//             }
-//     }), $("body").on("mousedown touchstart", ".content-tint, .close-special-menu", function(t) {
-//         $(".content-tint").removeClass("on"), $(".selected-nav").click(), setTimeout(function() {
-//             $(".content-tint").remove()
-//         }, 10)
-//     }).on("click", ".blocsapp-special-menu a", function(t) {
-//         $(t.target).closest(".dropdown-toggle").length || $(".close-special-menu").mousedown()
-//     })
-// }
+function setUpSpecialNavs() {
+    $(".navbar-toggle").click(function(t) {
+        var e = $(this).closest("nav"),
+            i = e.find("ul.site-navigation"),
+            a = i.clone();
+        if (i.parent().hasClass("nav-special"))
+            if (t.stopPropagation(), $(this).hasClass("selected-nav")) $(".blocsapp-special-menu blocsnav").removeClass("open"), $(".selected-nav").removeClass("selected-nav"), setTimeout(function() {
+                $(".blocsapp-special-menu").remove(), $("body").removeClass("lock-scroll"), $(".selected-nav").removeClass("selected-nav")
+            }, 300);
+            else {
+                $(this).addClass("selected-nav");
+                var o = e.attr("class").replace("navbar", "").replace("row", ""),
+                    l = i.parent().attr("class").replace("navbar-collapse", "").replace("collapse", "");
+                ($(".content-tint").length = -1) && $("body").append('<div class="content-tint"></div>'), a.insertBefore(".page-container").wrap('<div class="blocsapp-special-menu ' + o + '"><blocsnav class="' + l + '">'), $("blocsnav").prepend('<a class="close-special-menu animated fadeIn" style="animation-delay:0.5s;"><div class="close-icon"></div></a>'),
+                    function() {
+                        var t = "fadeInRight",
+                            e = 0,
+                            i = 60;
+                        $(".blocsapp-special-menu blocsnav").hasClass("fullscreen-nav") ? (t = "fadeIn", i = 100) : $(".blocsapp-special-menu").hasClass("nav-invert") && (t = "fadeInLeft");
+                        $(".blocsapp-special-menu blocsnav li").each(function() {
+                            $(this).parent().hasClass("dropdown-menu") ? $(this).addClass("animated fadeIn") : (e += i, $(this).attr("style", "animation-delay:" + e + "ms").addClass("animated " + t))
+                        })
+                    }(), setTimeout(function() {
+                        $(".blocsapp-special-menu blocsnav").addClass("open"), $(".content-tint").addClass("on"), $("body").addClass("lock-scroll")
+                    }, 10)
+            }
+    }), $("body").on("mousedown touchstart", ".content-tint, .close-special-menu", function(t) {
+        $(".content-tint").removeClass("on"), $(".selected-nav").click(), setTimeout(function() {
+            $(".content-tint").remove()
+        }, 10)
+    }).on("click", ".blocsapp-special-menu a", function(t) {
+        $(t.target).closest(".dropdown-toggle").length || $(".close-special-menu").mousedown()
+    })
+}
 
-// function extraNavFuncs() {
-//         $(t.target).closest(".dropdown-toggle").length || $(".navbar-collapse").collapse("hide")
-//     }), $("a.dropdown-toggle").click(function(t) {
-//         $(this).parent().addClass("target-open-menu"), $(this).closest(".dropdown-menu").find(".dropdown.open").each(function(t) {
-//             $(this).hasClass("target-open-menu") || $(this).removeClass("open")
-//         }), $(".target-open-menu").removeClass("target-open-menu")
-//     })
-// }
+function extraNavFuncs() {
+    $(".site-navigation a").click(function(t) {
+        $(t.target).closest(".dropdown-toggle").length || $(".navbar-collapse").collapse("hide")
+    }), $("a.dropdown-toggle").click(function(t) {
+        $(this).parent().addClass("target-open-menu"), $(this).closest(".dropdown-menu").find(".dropdown.open").each(function(t) {
+            $(this).hasClass("target-open-menu") || $(this).removeClass("open")
+        }), $(".target-open-menu").removeClass("target-open-menu")
+    })
+}
 
 function setFillScreenBlocHeight() {
     $(".bloc-fill-screen").each(function(t) {
@@ -192,7 +193,7 @@ $(document).ready(function() {
         t.preventDefault(), $("html,body").animate({
             scrollTop: $("#scroll-hero").closest(".bloc").height()
         }, "slow")
-    }), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
+    }), extraNavFuncs(), setUpSpecialNavs(), setUpDropdownSubs(), setUpLightBox(), setUpVisibilityToggle(), addSwipeSupport(), addKeyBoardSupport(), -1 != navigator.userAgent.indexOf("Safari") && -1 == navigator.userAgent.indexOf("Chrome") && $("#page-loading-blocs-notifaction").remove()
 }), $(window).load(function() {
     setFillScreenBlocHeight(), animateWhenVisible(), $("#page-loading-blocs-notifaction").remove()
 }).resize(function() {
