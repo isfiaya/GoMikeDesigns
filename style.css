@@ -386,11 +386,13 @@ p {
 	max-width: 400px;
 	margin: auto auto auto auto;
 }
-h2 {
-	font-size: 22px;
+h2,
+.hd-title {
+	font-size: 36px;
 	line-height: 1.4em;
+	color: #000 !important;
 }
-h3 {
+h4 {
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -653,8 +655,9 @@ h4 {
 	margin: auto;
 }
 .txt_edit {
-	font-size: 36px;
+	font-size: 22px;
 	font-weight: 500;
+	color: #c8cbe5 !important;
 }
 .txt_size {
 	font-size: 22px;
@@ -662,7 +665,8 @@ h4 {
 	color: #575757 !important;
 }
 .p-size {
-	font-size: 16px !important;
+	font-size: 22px !important;
+	color: #a2acd2 !important;
 }
 .next-lightbox {
 	padding: 3px 5px 3px 7px;
