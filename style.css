@@ -334,7 +334,7 @@ a[data-lightbox]:hover img {
 	position: absolute;
 	left: 15px;
 	right: 15px;
-	bottom: 5px;
+	bottom: 0px;
 }
 
 .snapshot-lb .lightbox-caption {
@@ -354,6 +354,7 @@ h6,
 label,
 p {
 	font-family: helvetica;
+	font-display: swap;
 	font-weight: 400;
 	color: #575757 !important;
 }
@@ -392,7 +393,7 @@ h2,
 	line-height: 1.4em;
 	color: #000 !important;
 }
-h4 {
+.title-img {
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -404,9 +405,6 @@ h4 {
 	box-shadow: 0 0 0 #000;
 }
 h1 {
-	color: #333 !important;
-}
-h4 {
 	color: #333 !important;
 }
 .icons {
@@ -642,11 +640,15 @@ h4 {
 .link-color {
 	color: #e6e6e6 !important;
 }
-.quote {
+blockquote {
 	color: #333 !important;
 	font-size: 15px;
 	font-style: italic;
 	line-height: 26px;
+	width: 85%;
+	margin: 0 auto;
+	display: block;
+	max-width: 565px;
 }
 .size-txt {
 	font-size: 15px;
