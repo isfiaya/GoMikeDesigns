@@ -389,9 +389,11 @@ p {
 }
 h2,
 .hd-title {
-	font-size: 36px;
 	line-height: 1.4em;
 	color: #000 !important;
+}
+.mrg-bloc {
+	margin: 50px 0px;
 }
 .title-img {
 	font-size: 15px;
@@ -462,7 +464,7 @@ h1 {
 	color: #ccc !important;
 }
 .ltc-atomic-tangerine {
-	color: #595959 !important;
+	color: #94360a !important;
 }
 .ltc-atomic-tangerine:hover {
 	color: #c27956 !important;
@@ -718,4 +720,26 @@ blockquote {
 	width: 90%;
 	max-width: 900px;
 	margin: 0 auto 0;
+}
+.list-contact {
+	list-style: none;
+	padding-inline-start: 0px;
+	text-align: center;
+}
+.list-contact li {
+	margin: 25px;
+}
+.title-contact {
+	text-align: center;
+}
+@media (min-width: 767px) {
+	.title-contact {
+		margin-top: -35px;
+		padding-bottom: 25px;
+	}
+}
+@media (max-width: 767px) {
+	.t-margin {
+		margin-top: 0;
+	}
 }
