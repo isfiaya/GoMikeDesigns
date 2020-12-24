@@ -289,7 +289,7 @@ button {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
-	opacity: 0;
+	opacity: 1;
 	z-index: 500;
 	transition: all .3s ease-in-out;
 }
@@ -733,6 +733,9 @@ blockquote {
 	.title-contact {
 		margin-top: -35px;
 		padding-bottom: 25px;
+	}
+	.toggle {
+		display: none;
 	}
 }
 @media (max-width: 767px) {
