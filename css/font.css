@@ -48,3 +48,6 @@
 .fa-chevron-right:before {
 	content: "\f054";
 }
+.fa-bars:before {
+	content: "\f0c9";
+}

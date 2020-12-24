@@ -200,10 +200,7 @@ button {
 .nav > li a:hover {
 	background: 0 0;
 }
-.navbar-toggle {
-	margin: 10px 10px 0 0;
-	border: 0;
-}
+
 .navbar-toggle:hover {
 	background: 0 0 !important;
 }
@@ -742,4 +739,13 @@ blockquote {
 	.t-margin {
 		margin-top: 0;
 	}
+}
+.toggle {
+	margin: 10px 10px 0 0;
+	font-size: 25px;
+	position: relative;
+	float: right;
+	margin-right: 15px;
+	background-color: transparent;
+	border: none;
 }
