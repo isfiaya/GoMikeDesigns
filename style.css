@@ -384,10 +384,10 @@ p {
 	max-width: 400px;
 	margin: auto auto auto auto;
 }
-h2,
-.hd-title {
+h2 {
 	line-height: 1.4em;
 	color: #000 !important;
+	font-size: 2.3em;
 }
 .mrg-bloc {
 	margin: 50px 0px;
@@ -400,7 +400,7 @@ h2,
 }
 .med-width-whitespace {
 	max-width: 800px;
-	margin: auto auto auto auto;
+	margin: 50px auto auto auto;
 	box-shadow: 0 0 0 #000;
 }
 h1 {
@@ -741,6 +741,9 @@ blockquote {
 @media (max-width: 767px) {
 	.t-margin {
 		margin-top: 0;
+	}
+	.card-margin {
+		margin-bottom: 44px;
 	}
 }
 .toggle {
