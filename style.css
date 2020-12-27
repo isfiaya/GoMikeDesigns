@@ -257,7 +257,7 @@ button {
 .btn-d:focus,
 .btn-d:hover {
   color: #fff;
-  background: rgba(0, 0, 0, 0.3);
+  background: #ddd;
 }
 button {
   outline: 0 !important;
