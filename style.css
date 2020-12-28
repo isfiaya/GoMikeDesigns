@@ -618,7 +618,10 @@ h1 {
     margin-top: 30px;
   }
   form {
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
+  }
+  .list-contact {
+    padding-left: 10px !important;
   }
 }
 @media (max-width: 400px) {
@@ -720,13 +723,9 @@ blockquote {
 .list-contact {
   list-style: none;
   padding-left: 0px;
-  text-align: center;
 }
 .list-contact li {
-  margin: 25px;
-}
-.title-contact {
-  text-align: center;
+  margin-bottom: 12px;
 }
 @media (min-width: 767px) {
   .title-contact {
