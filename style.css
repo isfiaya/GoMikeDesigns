@@ -753,3 +753,6 @@ blockquote {
   background-color: transparent;
   border: none;
 }
+cite {
+  color: #000;
+}
