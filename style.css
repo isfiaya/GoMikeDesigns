@@ -498,23 +498,12 @@ h1 {
     max-width: 100%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  .b-parallax {
-    background-attachment: scroll;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
-  .b-parallax {
-    background-attachment: scroll;
-  }
-}
+
 @media (max-width: 991px) {
   .container {
     width: 100%;
   }
-  .b-parallax {
-    background-attachment: scroll;
-  }
+  
   #hero-bloc,
   .page-container {
     overflow-x: hidden;
@@ -540,9 +529,6 @@ h1 {
   p {
     padding-left: 10px !important;
     padding-right: 10px !important;
-  }
-  .b-parallax {
-    background-attachment: scroll;
   }
   .navbar .nav {
     padding-top: 0;
@@ -682,25 +668,25 @@ blockquote {
 .next-lightbox,
 .prev-lightbox {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(0, 0, 0, 0.5);
+  color: black !important;
+  background: rgb(255 255 255 / 60%);
   transition: all 0.2s ease-in-out;
   position: absolute;
   top: 45%;
   z-index: 1;
-  opacity: 0.4;
+  border-radius: 30%;
 }
 .close-lightbox {
-  color: #fff;
+  color: black;
   font-size: 30px;
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 20;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(255 255 255 / 60%);
   border: none;
   line-height: 30px;
-  opacity: 0.3;
+  border-radius: 30%;
 }
 #lightbox-modal .modal-dialog img {
   max-height: 90vh;
